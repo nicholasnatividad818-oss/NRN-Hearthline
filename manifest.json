@@ -1,0 +1,9 @@
+{
+  "name": "Hearthline",
+  "short_name": "Hearthline",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#120d0a",
+  "theme_color": "#1a120c",
+  "description": "Family continuity when the grid fails."
+}

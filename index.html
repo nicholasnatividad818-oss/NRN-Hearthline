@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a120c" />
+  <meta name="description" content="Hearthline — family continuity when the grid fails and when a parent begins to fail." />
+  <title>Hearthline</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="rail" id="rail">
+      <div class="brand">
+        <div class="ember" aria-hidden="true"></div>
+        <div>
+          <strong>Hearthline</strong>
+          <span>Continuity</span>
+        </div>
+      </div>
+      <nav>
+        <button data-view="home" class="active">Hearth</button>
+        <button data-view="people">People</button>
+        <button data-view="ledger">Ledger</button>
+        <button data-view="meds">Meds</button>
+        <button data-view="checkins">Check-ins</button>
+        <button data-view="emergency">Emergency pack</button>
+        <button data-view="block">The block</button>
+      </nav>
+      <div class="rail-foot">
+        <div id="net-pill" class="pill online">Online</div>
+        <button id="export-btn" class="ghost">Export household</button>
+        <label class="ghost file">
+          Import
+          <input type="file" id="import-file" accept="application/json" hidden />
+        </label>
+      </div>
+    </aside>
+
+    <main>
+      <header class="top">
+        <button class="menu" id="menu-btn" aria-label="Menu">☰</button>
+        <div>
+          <h1 id="view-title">Hearth</h1>
+          <p id="view-sub">What the household needs to remember.</p>
+        </div>
+        <div class="household-chip" id="household-chip">Unnamed household</div>
+      </header>
+
+      <section id="view-home" class="view"></section>
+      <section id="view-people" class="view hidden"></section>
+      <section id="view-ledger" class="view hidden"></section>
+      <section id="view-meds" class="view hidden"></section>
+      <section id="view-checkins" class="view hidden"></section>
+      <section id="view-emergency" class="view hidden"></section>
+      <section id="view-block" class="view hidden"></section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" id="modal-card"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
