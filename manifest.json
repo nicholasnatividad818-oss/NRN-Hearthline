@@ -1,9 +1,19 @@
 {
-  "name": "Hearthline",
+  "name": "NRN Hearthline",
   "short_name": "Hearthline",
-  "start_url": ".",
+  "description": "Family continuity when the grid fails.",
+  "start_url": "./",
+  "scope": "./",
+  "id": "./",
   "display": "standalone",
   "background_color": "#120d0a",
   "theme_color": "#1a120c",
-  "description": "Family continuity when the grid fails."
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }

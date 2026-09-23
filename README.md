@@ -1,23 +1,23 @@
 # NRN Hearthline
 
-Offline-first family continuity app.
+Offline-first family continuity app. Progressive Web App.
 
-Household ledger, medications, check-ins, emergency pack, and a named-neighbor block. Data lives in the browser (`localStorage`). Export and import JSON to move a household between devices.
+Household ledger, medications, check-ins, emergency pack, and a named-neighbor block. Data lives in the browser (`localStorage`).
 
-## Run
+## Live (HTTPS)
 
-**Easiest:** open `Hearthline.html` in a browser. One file. No server.
+https://nicholasnatividad818-oss.github.io/NRN-Hearthline/
 
-**PWA / offline cache:** serve this folder over HTTP:
+Pages deploys from GitHub Actions on push to `main`. First time: **Repo → Settings → Pages → Source: GitHub Actions**.
+
+Chrome / Edge: Install in the address bar, or **Install app** after `beforeinstallprompt`.
+
+iPhone: Safari → Share → Add to Home Screen.
+
+## Local
 
 ```bash
 python3 -m http.server 8765
 ```
-
-Then visit `http://localhost:8765`.
-
-## What this MVP is not
-
-Not an EHR. Not a clinician. Not a mesh radio. Not a marketplace.
 
 NRN · Instinct Ink Identity
